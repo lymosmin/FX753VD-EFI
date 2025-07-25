@@ -110,14 +110,6 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
-                    <string>SSDT-GPI0_GPEN.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
                     <string>SSDT-Disable-RTC.aml</string>
                 </dict>
                 <dict>
@@ -180,7 +172,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>SSDT-RTC0.aml</string>
                 </dict>
@@ -212,7 +204,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>SSDT-TPD1-GPIO.aml</string>
                 </dict>
@@ -220,9 +212,33 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>SSDT-TPD1-POLL.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-GPI0_ENABLED.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>disable-TPD0.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>disable-Devices.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -1274,7 +1290,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Find</key>
                     <data>X1NUQQ==</data>
                     <key>Limit</key>
@@ -1375,6 +1391,36 @@
                     <data></data>
                     <key>Replace</key>
                     <data>QURTTQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>PNLF to XNLF</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>UE5MRg==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WE5MRg==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -1618,7 +1664,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.9.5</string>
+                    <string>V1.9.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1944,7 +1990,7 @@
                     <key>Comment</key>
                     <string>V1.0.3</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrightnessKeys</string>
                     <key>MaxKernel</key>
@@ -2088,7 +2134,7 @@
                     <key>Comment</key>
                     <string>V1.4.1</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AsusSMC</string>
                     <key>MaxKernel</key>
@@ -2109,24 +2155,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/ECEnabler</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AsusSMC-debug.kext</string>
-                    <key>Comment</key>
-                    <string>V1.4.1</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AsusSMC</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -2519,9 +2547,9 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576 -asussmcdbg -no_compat_check amfi=0x80 -brkeysdbg ipc_control_port_options=0 -dbglog</string>
+                    <string>-v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576 -asussmcdbg -no_compat_check amfi=0x80 ipc_control_port_options=0 -dbglog</string>
                     <key>csr-active-config</key>
-                    <data>/wMAAA==</data>
+                    <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
