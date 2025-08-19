@@ -76,33 +76,9 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>debug.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
                     <true/>
                     <key>Path</key>
                     <string>debug-adbg.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>me-debug-fnkey.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>I2CFIX.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -126,14 +102,6 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
-                    <string>SSDT-FnKeys.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
                     <string>SSDT-FN.aml</string>
                 </dict>
                 <dict>
@@ -148,7 +116,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>debug-fn.aml</string>
                 </dict>
@@ -159,14 +127,6 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-RMDT.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>debug-RMDT.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -236,9 +196,49 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>disable-Devices.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>debug-Qxx.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-SBUS.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-HPET_RTC_TIMR-fix.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>enable-H_EC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>H_EC.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -1286,11 +1286,11 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>_STA to ASTA</string>
+                    <string>_STA to QSTA</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>X1NUQQ==</data>
                     <key>Limit</key>
@@ -1300,7 +1300,7 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>QVNUQQ==</data>
+                    <data>UVNUQQ==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -1430,6 +1430,96 @@
                     <key>TableSignature</key>
                     <data></data>
                 </dict>
+                <dict>
+                    <key>Base</key>
+                    <string>\_SB.PCI0.I2C0.TPD0._STA</string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>SDS0 to SDSD</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>U0RTMA==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>U0RTRA==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string>\_SB.PCI0.I2C0.TPD0._DSM</string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>SBFG to SBFI</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Find</key>
+                    <data>U0JGRw==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>UVNUQQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string>\_SB.PCI0.LPCB.H_EC</string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>_STA to QSTA</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X1NUQQ==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>UVNUQQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
             </array>
             <key>Quirks</key>
             <dict>
@@ -1523,7 +1613,7 @@
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>layout-id</key>
-                    <integer>16</integer>
+                    <integer>29</integer>
                     <key>model</key>
                     <string>ALC 235 HD Audio Controller</string>
                 </dict>
@@ -1770,13 +1860,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext</string>
+                    <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.7</string>
+                    <string>V1.5.4</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Controller</string>
+                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1788,67 +1878,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <string>USBMap.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.6</string>
+                    <string>V1.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooInput</string>
-                    <key>MaxKernel</key>
                     <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.7</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Keyboard</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.7</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Mouse</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.7</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Trackpad</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1968,24 +2004,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>HibernationFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.5.4</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/HibernationFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>BrightnessKeys-debug.kext</string>
                     <key>Comment</key>
                     <string>V1.0.3</string>
@@ -1993,24 +2011,6 @@
                     <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrightnessKeys</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>USBMap.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -2080,7 +2080,7 @@
                     <key>Comment</key>
                     <string>V1.4.1</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AMFIPass</string>
                     <key>MaxKernel</key>
@@ -2191,6 +2191,132 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/DebugEnhancer</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AppleALC-rebuild.kext</string>
+                    <key>Comment</key>
+                    <string>V1.9.6</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AppleALC</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AsusWMIController.kext</string>
+                    <key>Comment</key>
+                    <string>V1.7.2</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AsusWMIController</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AsusNBFnKeys.kext</string>
+                    <key>Comment</key>
+                    <string>V1.7.2</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AsusNBFnKeys</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AsusNBFnKeys.kext/Contents/PlugIns/AsusWMIController.kext</string>
+                    <key>Comment</key>
+                    <string>V1.7.2</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AsusWMIController</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>TimeSync.kext</string>
+                    <key>Comment</key>
+                    <string>V1</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/TimeSync</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>LymosTime.kext</string>
+                    <key>Comment</key>
+                    <string>V1</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/LymosTime</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>LymosTimer.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.4</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/LymosTimer</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -2547,7 +2673,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576 -asussmcdbg -no_compat_check amfi=0x80 ipc_control_port_options=0 -dbglog</string>
+                    <string>-v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576 -asussmcdbg -no_compat_check ipc_control_port_options=0 -dbglog</string>
                     <key>csr-active-config</key>
                     <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
