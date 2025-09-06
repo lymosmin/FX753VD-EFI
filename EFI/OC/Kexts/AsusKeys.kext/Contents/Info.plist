@@ -7,23 +7,23 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>LymosTime</string>
+	<string>AsusKeys</string>
 	<key>CFBundleIdentifier</key>
-	<string>lymos.LymosTime</string>
+	<string>tommy.AsusKeys</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>LymosTime</string>
+	<string>AsusKeys</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0.1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,40 +42,39 @@
 	<string>16F6</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>LymosTime</key>
+		<key>AsusKeys</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>lymos.LymosTime</string>
-			<key>IOProbeScore</key>
-			<integer>9999</integer>
+			<string>tommy.AsusKeys</string>
+			<key>IOClass</key>
+			<string>AsusKeys</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>PNP0C09</string>
+				<string>ATK0100</string>
+			</array>
 			<key>IOProviderClass</key>
-			<string>IOResources</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
+			<string>IOACPIPlatformDevice</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>15.5</string>
-	<key>OSBundleCompatibleVersion</key>
-	<string>1.0</string>
+	<string>10.11</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>com.apple.iokit.IOACPIFamily</key>
+		<string>1.0.0</string>
 		<key>com.apple.kpi.bsd</key>
-		<string>12.0.0</string>
-		<key>com.apple.kpi.dsep</key>
-		<string>12.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>12.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>12.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>12.0.0</string>
+		<string>8.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
-		<string>12.0.0</string>
+		<string>8.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Root</string>
-	<key>OSKernelResource</key>
-	<true/>
+	<string>Console</string>
 </dict>
 </plist>
