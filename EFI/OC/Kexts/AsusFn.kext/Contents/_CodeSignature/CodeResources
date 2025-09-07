@@ -4,39 +4,23 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MiLKDDnrUKr4EmuvhS5VQwxHGK8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>Resources/AsusHIDHotkey.hpp</key>
+		<data>
+		UgFWcWmeh1OUtjRDT9hSnVovThQ=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>PlugIns/AsusWMIController.kext</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			YiDilDKMnwVH+wObpMYe7eyDOjI=
-			</data>
-			<key>requirement</key>
-			<string>cdhash H"d9cb764c0f3b378b61331a743b367471f597400a" or cdhash H"6220e294328c9f0547fb039ba4c61eedec833a32"</string>
-		</dict>
-		<key>Resources/en.lproj/InfoPlist.strings</key>
+		<key>Resources/AsusHIDHotkey.hpp</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MiLKDDnrUKr4EmuvhS5VQwxHGK8=
+			UgFWcWmeh1OUtjRDT9hSnVovThQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Oc8u4Ht7Mz58F50L9NeYpbcq9qTlhPUeZCcDu/pPyCg=
+			Wteulto+oX0IhE4W43SX9zOnHD9hOHVziG1a2TLOv4o=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

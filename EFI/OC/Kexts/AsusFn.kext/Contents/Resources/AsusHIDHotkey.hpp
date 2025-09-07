@@ -1,9 +1,6 @@
 //
 //  AsusHIDHotkey.hpp
-//  AsusSMC
 //
-//  Created by lymos on 2025/7/6.
-//  Copyright © 2025 Le Bao Hiep. All rights reserved.
 //
 #ifndef _ASUS_HID_HOTKEY_HPP
 #define _ASUS_HID_HOTKEY_HPP
