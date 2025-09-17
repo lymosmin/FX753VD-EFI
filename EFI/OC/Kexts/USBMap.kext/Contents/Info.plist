@@ -51,13 +51,13 @@
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						AQAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						AQAAAA==
@@ -66,13 +66,13 @@
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						AgAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						AgAAAA==
@@ -111,13 +111,13 @@
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						BQAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>2</integer>
+						<integer>3</integer>
 						<key>usb-port-number</key>
 						<data>
 						BQAAAA==
@@ -126,13 +126,13 @@
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>1</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						BgAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>1</integer>
+						<integer>0</integer>
 						<key>usb-port-number</key>
 						<data>
 						BgAAAA==
@@ -156,13 +156,13 @@
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
 						CAAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>usb-port-number</key>
 						<data>
 						CAAAAA==
@@ -186,13 +186,13 @@
 					<key>HS10</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
 						CgAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>usb-port-number</key>
 						<data>
 						CgAAAA==

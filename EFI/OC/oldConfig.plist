@@ -100,9 +100,9 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
-                    <string>SSDT-Disable-RTC.aml</string>
+                    <string>SSDT-ATKD.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -118,15 +118,7 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
-                    <string>SSDT-FN.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>debug-fn.aml</string>
+                    <string>SSDT-Disable-RTC.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -214,14 +206,6 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
-                    <string>debug-Qxx.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
                     <string>enable-H_EC.aml</string>
                 </dict>
                 <dict>
@@ -238,22 +222,6 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-SKBV.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>debug-kb.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
                     <string>BrightnessFn.aml</string>
                 </dict>
                 <dict>
@@ -262,7 +230,7 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
-                    <string>Fans.aml</string>
+                    <string>debug-usb.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -1544,6 +1512,36 @@
                     <key>TableSignature</key>
                     <data></data>
                 </dict>
+                <dict>
+                    <key>Base</key>
+                    <string>\_SB.PCI0.XHC</string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>_DSM to ADSM</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Find</key>
+                    <data>X0RTTQ==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>QURTTQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
             </array>
             <key>Quirks</key>
             <dict>
@@ -2030,13 +2028,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>LymosTimer.kext</string>
+                    <string>WakeSync.kext</string>
                     <key>Comment</key>
                     <string>V1.0.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/LymosTimer</string>
+                    <string>Contents/MacOS/WakeSync</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -2106,7 +2104,7 @@
                     <key>Comment</key>
                     <string>V1.4.1</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AMFIPass</string>
                     <key>MaxKernel</key>
@@ -2607,7 +2605,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-no_compat_check</string>
+                    <string>-v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576  -hbfxdbg -no_compat_check ipc_control_port_options=0 -dbglog</string>
                     <key>csr-active-config</key>
                     <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
