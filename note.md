@@ -28,89 +28,23 @@
 8. 触控板 GPIO中断模式还未成功
 
 
-  
+9.  debug boot arg:
+  -v keepsyms=1 -dbgenhdbg -dbgenhbeta -dbgenhiolog debug=0x100 msgbuf=1048576  -hbfxdbg -no_compat_check ipc_control_port_options=0 -dbglog
 
-[  258.457525]: process_is_plugin_host: running binary "sh" in keys-off mode due to identity: com.apple.shprocess_is_plugin_host: running binary "bash" in keys-off mode due to identity: com.apple.bashAsusSMC       als: @ (DBG) refreshALS lux 300
+10. release boot arg
+  -no_compat_check
 
-[
-  {
-    "value": "1",
-    "usagePage": "65329 (0xff31)",
-    "usage": "32 (0x0020)"
-  },
-  {
-    "value": "1",
-    "usagePage": "65329 (0xff31)",
-    "usage": "32 (0x0020)"
-  },
-  {
-    "value": "32",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "32",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "32 (0x0020)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "32 (0x0020)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "1",
-    "usagePage": "65329 (0xff31)",
-    "usage": "16 (0x0010)"
-  },
-  {
-    "value": "1",
-    "usagePage": "65329 (0xff31)",
-    "usage": "16 (0x0010)"
-  },
-  {
-    "value": "16",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "16",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "16 (0x0010)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "16 (0x0010)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  },
-  {
-    "value": "0",
-    "usagePage": "65329 (0xff31)",
-    "usage": "-1 (0xffffffff)"
-  }
-]
+11. disable mount disk part
+  sudo vi /etc/fstab # add those
+  UUID=0C24C632-AB0B-4C1C-8FE1-4CC55415DE6C none ntfs noauto
+  UUID=AD98E042-0BD2-44E2-89B6-A54D9EA61C45 none ntfs noauto
+  UUID=46575D94-D7C8-4D96-9752-1D1597F530D9 none ntfs noauto
+  UUID=E61BD1E6-6C5F-4553-8ABC-90BF93665C4E none ntfs noauto
+  UUID=516E5D12-439D-4757-8D64-9951FA38B30D none ntfs noauto
+
+12. boot error message: 
+  [  150.130098]: AppleSMCFamily::handleSMCResult ERROR in smcReadKeyMMIO.  TH0x kSMCBadArgumentError(0x89)
+
+13. boot error message:
+  [ 1183.112311]: IG:: get_gstate:2446 (state=15, fPowerStatesEnable=1)
+
