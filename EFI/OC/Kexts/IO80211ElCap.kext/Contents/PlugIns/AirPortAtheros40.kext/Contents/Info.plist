@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>15A284</string>
+	<string>15A178l</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -31,17 +31,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>7D129b</string>
+	<string>7A176g</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>15G22</string>
+	<string>15A283</string>
 	<key>DTSDKName</key>
 	<string>macosx10.11internal</string>
 	<key>DTXcode</key>
-	<string>0730</string>
+	<string>0700</string>
 	<key>DTXcodeBuild</key>
-	<string>7D129b</string>
+	<string>7A176g</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Atheros Wireless LAN PCI</key>
@@ -54,7 +54,7 @@
 			<string>IODefaultMatchCategory</string>
 			<key>IONameMatch</key>
 			<array>
-				<string>pci168c,30</string>
+				<string>pci168c,36</string>
 				<string>pci168c,2a</string>
 				<string>pci106b,0086</string>
 				<string>pci168c,1c</string>

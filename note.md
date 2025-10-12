@@ -48,3 +48,22 @@
 13. boot error message:
   [ 1183.112311]: IG:: get_gstate:2446 (state=15, fPowerStatesEnable=1)
 
+14. wifi: Atheros AR956x Wirelesss
+  PCI\VEN_168C&DEV_0036&SUBSYS_082311AD&REV_01\4&A2DEF5D&0&00E0
+
+15. Atheros Buletooth
+  USB\VID_04CA&PID_3018\5&16BDD27B&0&9
+
+16. USBMap:
+  type: 0 => USB2
+  type: 2 => USB3
+  type: 3 => type c
+  type: 255 => internal
+
+17. Bluetooth:
+  报错: IOKit Daemon (kernelmanagerd) stall[1], (60s): 'IOUSBHostDevice' (a,20000001)
+
+18. 查找导出符号：
+ sudo nm -gU "/System/Library/Extensions/IOBluetoothFamily.kext/Contents/MacOS/IOBluetoothFamily" | c++filt | egrep -i "Transport|USB" | head -n 400
+
+  

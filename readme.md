@@ -15,3 +15,7 @@ driver info：
 8. FN keys：support，exclude F2 / F8
 9. keyboard backlight：support
 
+
+# install 
+1. install OC/installFnKey.pkg to make fn work
+2. install OC/installWakeSync.pkg to make wakeup active sound and time sync (Optional)

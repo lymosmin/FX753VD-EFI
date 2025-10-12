@@ -171,14 +171,14 @@
 					<key>HS09</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>#port</key>
+						<integer>255</integer>
+						<key>port</key>
 						<data>
 						CQAAAA==
 						</data>
 						<key>usb-port-type</key>
-						<integer>0</integer>
-						<key>#usb-port-number</key>
+						<integer>255</integer>
+						<key>usb-port-number</key>
 						<data>
 						CQAAAA==
 						</data>
